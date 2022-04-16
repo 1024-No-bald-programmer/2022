@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="sign">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <title>登陆界面-薪尽自然凉</title>
+    <link rel="stylesheet" href="./css/background.css">
+    <link rel="stylesheet" href="./css/frame.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="toast show">
+        <div class="toast-header">
+            <strong class="me-auto">作者-薪尽自然凉</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+        </div>
+        <div class="toast-body">
+            <p>此项目仅供参考,未经允许不得商用或据为己有</p>
+        </div>
+    </div>
+    <div id="main">
+        <img src="./static/QRcode.PNG" alt="" id="QR">
+        <div id="left">
+            <p>
+                <img src="./static/menu_left_min.svg" alt="">
+            </p>
+        </div>
+        <div id="right">
+            <h4>登录</h4>
+            <form action="/action_page.php">
+                <div class="form-floating mb-3 mt-3">
+                    <input type="text" class="form-control" id="email" placeholder="手机号" name="phone"
+                        data-bs-toggle="popover" data-bs-placement="left" data-bs-trigger="focus" title="手机号"
+                        data-bs-content="请填写11位合法手机号">
+                    <label for="phone">手机号</label>
+                </div>
+                <div class="form-floating mb-3 mt-3">
+                    <input type="password" class="form-control" id="email" placeholder="密码" name="password"
+                        data-bs-toggle="popover" data-bs-placement="left" data-bs-trigger="focus" title="密码"
+                        data-bs-content="6-20位,避免被他人猜到">
+                    <label for="password">密码</label>
+                </div>
+                <button type="submit" class="btn btn-primary" id="sign_onck">登录</button>
+            </form>
+            <div id="other_To_sign">
+                <p>其他登录方式</p>
+                <a href="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="腾讯QQ">
+                    <img src="./static/tencentqq.svg" alt="" id="other_item_svg">
+                </a>
+                <a href="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="微信">
+                    <img src="./static/wechat.svg" alt="" id="other_item_svg">
+                </a>
+                <a href="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="新浪微博">
+                    <img src="./static/sinaweibo.svg" alt="" id="other_item_svg">
+                </a>
+                <a href="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="GitHub">
+                    <img src="./static/github.svg" alt="" id="other_item_svg">
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
